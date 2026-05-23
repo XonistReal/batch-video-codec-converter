@@ -95,7 +95,7 @@ class App(ctk.CTk):
         self.minsize(800, 600)
         
         try:
-            self.iconbitmap(get_resource_path("icon.ico"))
+            self.iconbitmap(get_resource_path("technology.ico"))
         except:
             pass
 

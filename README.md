@@ -46,6 +46,6 @@ If you want to package the app into a single standalone `.exe` file using PyInst
    ```
 3. Run the following build command:
    ```cmd
-   pyinstaller --noconfirm --onedir --windowed --icon "icon.ico" --name "RetroConverter" --add-data "ffmpeg.exe;." --add-data "ffprobe.exe;." --add-data "icon.ico;."  "app.py"
+   pyinstaller --noconfirm --onefile --windowed --icon "technology.ico" --name "RetroConverter" --add-data "ffmpeg.exe;." --add-data "ffprobe.exe;." --add-data "technology.ico;."  "app.py"
    ```
 4. Find your built application inside the newly created `dist/RetroConverter` folder!
