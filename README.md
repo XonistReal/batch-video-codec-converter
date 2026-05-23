@@ -47,7 +47,7 @@ RetroBatch was made to bypass these limitations with a single click. Drop your f
 ### Option 1: Download the Pre-Built Installer (Recommended)
 1. Head to the [Releases](https://github.com/XonistReal/batch-video-codec-converter/releases) page.
 2. Download the latest installer for your OS:
-   - **Windows**: `retro-converter_x.x.x_x64-setup.exe`
+   - **Windows**: `RetroBatch_2.0.5_x64-setup.exe` (or latest from Releases)
    - **macOS**: `.dmg` (coming soon)
    - **Linux**: `.AppImage` (coming soon)
 3. Run the installer. On first launch, the app will automatically download FFmpeg into its app-data folder.

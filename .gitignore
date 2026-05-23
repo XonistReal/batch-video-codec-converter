@@ -19,6 +19,7 @@
 **/dist/
 **/dist-ssr/
 .vite/
+*.tsbuildinfo
 
 # ===============================
 # FFmpeg Binaries (User downloads via auto-installer)
