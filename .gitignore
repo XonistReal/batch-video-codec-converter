@@ -1,48 +1,72 @@
-# Built application files
+# ===============================
+# Build Output / Artifacts
+# ===============================
 *.exe
-dist/
-build/
-*.spec
+*.msi
+*.dmg
+*.AppImage
+*.deb
+*.rpm
+*.app
+*.zip
 
-# FFmpeg binaries
+# Tauri Rust build artifacts
+**/target/
+**/gen/schemas/
+
+# Node / Frontend build artifacts
+**/node_modules/
+**/dist/
+**/dist-ssr/
+.vite/
+
+# ===============================
+# FFmpeg Binaries (User downloads via auto-installer)
+# ===============================
 ffmpeg.exe
 ffprobe.exe
+ffmpeg
+ffprobe
 
-# Logs
+# ===============================
+# Logs & Debug
+# ===============================
 *.log
-converter.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual environments
-venv/
-.venv/
-env/
-.env/
-
-# IDEs
+# ===============================
+# Editor / IDE Files
+# ===============================
 .vscode/
 .idea/
 .cursor/
+*.suo
+*.ntvs*
+*.njsproj
+*.sw?
+
+# ===============================
+# OS-specific Files
+# ===============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===============================
+# Local Environment Files
+# ===============================
+.env
+.env.local
+*.local
+
+# ===============================
+# Legacy Python Files (Replaced by Tauri)
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
