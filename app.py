@@ -78,12 +78,20 @@ def get_resource_path(relative_path):
 
 def get_ffmpeg_path():
     ext = ".exe" if os.name == 'nt' else ""
-    local_bin = get_resource_path(f"ffmpeg{ext}")
+    if getattr(sys, 'frozen', False):
+        base_dir = os.path.dirname(sys.executable)
+    else:
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+    local_bin = os.path.join(base_dir, f"ffmpeg{ext}")
     return local_bin if os.path.exists(local_bin) else "ffmpeg"
 
 def get_ffprobe_path():
     ext = ".exe" if os.name == 'nt' else ""
-    local_bin = get_resource_path(f"ffprobe{ext}")
+    if getattr(sys, 'frozen', False):
+        base_dir = os.path.dirname(sys.executable)
+    else:
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+    local_bin = os.path.join(base_dir, f"ffprobe{ext}")
     return local_bin if os.path.exists(local_bin) else "ffprobe"
 
 class App(ctk.CTk):
