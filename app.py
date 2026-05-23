@@ -189,7 +189,15 @@ class App(ctk.CTk):
             subprocess.run([ffmpeg_cmd, "-version"], stdout=subprocess.DEVNULL, stderr=subprocess.PIPE, check=True, creationflags=creationflags)
         except Exception as e:
             logging.error(f"FFmpeg check failed: {e}")
-            messagebox.showerror("FFmpeg Not Found", "FFmpeg could not be started.\n\nMake sure ffmpeg.exe is in the application folder.")
+            msg = (
+                "FFmpeg was not found!\n\n"
+                "To keep this app lightweight, FFmpeg is not bundled. "
+                "You must download it manually.\n\n"
+                "1. Go to: https://www.ffmpeg.org\n"
+                "2. Download the build for your OS.\n"
+                "3. Place 'ffmpeg' and 'ffprobe' in the same folder as this app."
+            )
+            messagebox.showerror("FFmpeg Missing", msg)
             self.convert_btn.configure(state="disabled")
 
     def browse_output_dir(self):
