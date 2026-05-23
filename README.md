@@ -1,4 +1,4 @@
-# Retro Batch Video Codec Converter
+# Batch Video Codec Converter
 
 A robust, user-friendly batch video converter tailored specifically for video editors using NLEs like DaVinci Resolve (Free/Studio) and Adobe Premiere Pro. 
 
